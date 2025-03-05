@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloons</title>
+    <link rel="stylesheet" href="/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/CSS/style.css">
+</head>
+<body>
+    <!-- after deleting this line of code: 
+    <div class="balloon balloon-red"></div>
+    And we run the function called “createBalloon.”
+    And nothing happens because we created a new div but we haven’t added it to the web page-->
+    <div class="score-block">
+        <p>You popped <span class="score">0</span> balloons</p> <!--This number will be constantly changing its value: each time we pop a balloon, the number will be increased by 1.-->
+    <!--So we wrap this number with a <span> tag and add to this <span>-->
+    </div>
+    <div class="total-shadow"> <!--because there is a shadowed grey background.-->
+        <div class="total-block"> <!--Inside of the first block, we have to place a block with the text.-->
+            <div class="total-wrapper win"> <!--because we need to display whether a person wins or loses.-->
+                <h4>Congratulations!</h4>
+                <img src="/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/images/happy.png" alt="winner">
+                <h4>You've popped all 100 balloons</h4> <!-- to inform a person how many balloons have been popped-->
+                <p>You are a champion!</p>
+            </div>
+            <div class="total-wrapper lose">
+                <h4>Sorry!</h4>
+                <img src="/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/images/sad.png" alt="Loser">
+                <h4>You've popped <span class="score">0</span> balloons</h4> <!--Since the number of popped balloons will be changing-->
+                <p>Play again?</p>
+                <button class="restart">Yes</button>
+                <button class="cancel">No</button>
+            </div>
+        </div>
+    </div>
+    <!--the audio play of audio or video files are blocked by the browsers.
+    So to unlock them, a user has to allow these files to play by clicking, for example, on the button on the Web page.
+    To make our background music play, we're going to add a special window with the start button.
+    So after clicking on this button, the background music place.-->
+    <div class="start-game-window">
+        <h2>Are you ready to start?</h2>
+        <button class="start-game-button">Start</button>
+    </div>
+    <audio src="/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/sounds/bg-music.mp3" class="bg-music" loop></audio>
+    <script src="/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/JS/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body{
+    overflow: hidden;/*Since all balloons have to float from the bottom to the top,
+    we need to be sure that no scroll bar will appear.*/
+    width: 100vw; /*100% it means 100% of a parent element’s width.
+    Instead 100vw it means 100% of the width of the screen*/
+    height: 100vh;/*it means 100% of the height of the screen*/
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+
+}
+.balloon{
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    /*to make each balloon invisible and at the bottom of the screen, 
+    we have to place each balloon behind the screen. Then it will be invisible.*/
+
+    /*by changing the value of the top to 100 vh each balloon will be floating from the bottom to the top.*/
+    top: 100vh; /*which is 100% of the height of the screen.*/
+    /*50vh to check if the balloon are visible or in this case are placed behind the grey background.*/
+    
+    background-size: cover; /*we add this because the original width of the image
+    is bigger than width:100px and height:200px,*/
+    background-position: center;
+    background-repeat: no-repeat;
+    /*to be sure that this image will not be repeated a few times.*/
+}
+.balloon-red{
+    background-image: url(/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/images/balloon-red.png);
+}
+.balloon-blue{
+    background-image: url(/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/images/balloon-blue.png);
+}
+.balloon-green{
+    background-image: url(/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/images/balloon-green.png);
+}
+.balloon-violet{
+    background-image: url(/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/images/balloon-violet.png);
+}
+.balloon-yellow{
+    background-image: url(/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/images/balloon-yellow.png);
+}
+.total-shadow{
+    /*display: none; --> To hide visual elements*/ 
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    /*to align the content vertically and horizontally.*/
+    /*display: flex;*/
+    display: none; /*changed to display.flex in JS*/
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /*To place the tab under the background,*/
+    position: relative; /*because it doesn’t work with position: static*/
+}
+.total-block{
+    background-color: #fff;
+    padding: 10px 100px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    text-align: center;
+}
+.lose{
+    display: none; /*to make the class you need invisible*/
+}
+.win {
+    display: none;
+}
+.score-block{
+    background-color: #efefef;
+    width: 300px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0; 
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 150px ) /*to have the block at the center of the page*/
+}
+
+.start-game-window{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
