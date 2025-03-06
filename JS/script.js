@@ -165,7 +165,7 @@ function restartGame() {
 }
 
 
-//event delegation because we can add an eventlitener only to any HTML element which we already have on the web page
+//event delegation because we can add an eventhandler only to any HTML element which we already have on the web page
 //the balloons are not stored beforehand, they are created when the game is on
 //so the main idea of the event delegation is attaching an event listener to elements which already exist on the web page,
 //but still it will work for those elements which do not exist on the web page.
