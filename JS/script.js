@@ -104,7 +104,7 @@ function deleteBalloon(elem) { //elem = balloon
 //to get the special sound when a balloon is popped
 function playBallSound() {
     let audio = document.createElement('audio'); //created the audio tag
-    audio.src = '/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/sounds/pop.mp3'; //path to the mp3 file
+    audio.src = '/sounds/pop.mp3'; //path to the mp3 file
     audio.play(); //play function to play the music
     //we can play any music even without having an <audio> tag on the web page
 }

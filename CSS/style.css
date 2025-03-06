@@ -27,19 +27,19 @@ body{
     /*to be sure that this image will not be repeated a few times.*/
 }
 .balloon-red{
-    background-image: url(/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/images/balloon-red.png);
+    background-image: url(/images/balloon-red.png);
 }
 .balloon-blue{
-    background-image: url(/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/images/balloon-blue.png);
+    background-image: url(/images/balloon-blue.png);
 }
 .balloon-green{
-    background-image: url(/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/images/balloon-green.png);
+    background-image: url(/images/balloon-green.png);
 }
 .balloon-violet{
-    background-image: url(/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/images/balloon-violet.png);
+    background-image: url(/images/balloon-violet.png);
 }
 .balloon-yellow{
-    background-image: url(/Users/michela/Desktop/Web_dev/Javascript/Project-Balloons/images/balloon-yellow.png);
+    background-image: url(/images/balloon-yellow.png);
 }
 .total-shadow{
     /*display: none; --> To hide visual elements*/ 
